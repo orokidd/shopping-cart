@@ -108,3 +108,31 @@ body {
     font-size: 32px;
     font-weight: 400;
 }
+
+.product-list {
+    display: grid;
+    max-width: 1200px;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.product-list img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    object-fit: contain;
+    padding: 40px;
+    background-color: rgb(240, 240, 240);
+}
+
+.product-title {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.product-price {
+    margin-top: 5px;
+    color: #555;
+}
