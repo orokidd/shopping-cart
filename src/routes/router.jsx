@@ -11,8 +11,8 @@ export const router = createBrowserRouter([
     element: <RootLayout />,
     children: [
       { index: true, element: <Home />, loader: shopLoader, },
-      { path: "shop", element: <Shop /> },
-      { path: "cart", element: <Cart /> },
+      { path: "shop", element: <Shop />, loader: shopLoader, },
+      { path: "cart", element: <Cart />, loader: shopLoader, },
     ],
   },
 ]);
