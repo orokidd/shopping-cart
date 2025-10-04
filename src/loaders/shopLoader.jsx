@@ -1,9 +1,5 @@
 export async function shopLoader() {
-  // Simulate fetching product data from an API
-  const products = [
-    { id: 1, name: "Product A", price: 29.99 },
-    { id: 2, name: "Product B", price: 49.99 },
-    { id: 3, name: "Product C", price: 19.99 },
-  ];
-  return { products };
+  const response = await fetch('https://fakestoreapi.com/products');
+  const data = await response.json();
+  return { data };
 }
