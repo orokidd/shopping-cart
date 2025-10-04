@@ -68,6 +68,10 @@ a {
   color: black;
 }
 
+body {
+    font-family: quicksand, sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -95,7 +99,6 @@ a {
 .new-arrivals {
     padding: 40px;
     text-align: center;
-    font-family: quicksand, sans-serif;
 }
 
 .new-arrivals-title {
