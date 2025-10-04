@@ -98,6 +98,9 @@ body {
 
 .new-arrivals {
     padding: 40px;
+}
+
+.new-arrivals-title, .new-arrivals-description {
     text-align: center;
 }
 
