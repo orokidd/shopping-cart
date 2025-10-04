@@ -13,7 +13,7 @@ export default function Shop() {
         <p>Jewelry</p>
       </div>
 
-      <div className="shop-product-list">
+      <div className="product-list shop">
         {data.map((product) => (
           <div className="product-item" key={product.id}>
             <img src={product.image} alt={product.name} />
