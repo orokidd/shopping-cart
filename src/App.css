@@ -151,3 +151,20 @@ body {
   margin: 0 auto;
   padding-top: 60px;
 }
+
+.product-section {
+  display: grid;
+  max-width: 1200px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+  padding: 120px;
+  gap: 60px;
+}
+
+.product-image img {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  object-fit: contain;
+  padding: 40px;
+  background-color: rgb(240, 240, 240);
+}
