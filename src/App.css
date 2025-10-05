@@ -176,3 +176,21 @@ body {
   border-bottom: 1px solid rgb(190, 190, 190);
   margin-bottom: 20px;
 }
+
+.add-to-cart-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  padding: 15px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: white;
+  color: black;
+}
