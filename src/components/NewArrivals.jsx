@@ -8,6 +8,7 @@ export default function NewArrivals() {
     <section className="new-arrivals">
       <h2 className="new-arrivals-title">New Arrivals</h2>
       <p className="new-arrivals-description">Check out the latest products in our collection!</p>
+
       <div className="product-list">
         {newProducts.map((product) => (
           <div key={product.id} className="product-item">
