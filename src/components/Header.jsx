@@ -9,7 +9,7 @@ export function Header() {
     <header className="header">
       <Link to="/shop" className="shop-link">Shop</Link>
       <Link to="/" className="home-link">TERATAI</Link>
-      <Link to="/cart" className="cart-link">Cart ({cartItems.length})</Link>
+      <Link to="/cart" className="cart-link">Cart ({cartItems.reduce((total, item) => total + item.quantity, 0)})</Link>
     </header>
   );
 }

@@ -17,7 +17,7 @@ export default function Product() {
             <div className="product-detail">
               <h1>{product.title}</h1>
               <p>{product.description}</p>
-              <AddCartButton price={product.price} id={product.id} />
+              <AddCartButton product={product} />
             </div>
           </div>
         ))}
