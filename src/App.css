@@ -245,6 +245,24 @@ body {
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: 120px;
+
+  gap: 20px;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  padding: 20px 0;
+}
+
+/* .cart-item-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.cart-item-image img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  background-color: rgb(240, 240, 240);
+  padding: 10px;
 }
 
 .cart-item-details {

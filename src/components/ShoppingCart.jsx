@@ -22,7 +22,7 @@ export default function ShoppingCart() {
                     </div>
                     <div className="cart-item-details">
                         <div className="top">
-                            <span className="cart-item-title">{item.title}</span>
+                            <span className="cart-item-title">{item.title.split(" ").slice(0, 5).join(" ")}</span>
                         </div>
                         <div className="bottom">
                             <div className="quantity-controls">
