@@ -7,18 +7,27 @@ export default function ShoppingCart() {
   return (
     <div className={`shopping-cart-overlay ${isCartOpen ? "open" : ""}`}>
       <div className={`shopping-cart`}>
-        <button className="close-cart-btn" onClick={toggleCart}>Close</button>
-        <h2>Shopping Cart</h2>
+        <div className="cart-header">
+            <h2>Cart</h2>
+            <button className="close-cart-btn" onClick={toggleCart}>X</button>
+        </div>
         {cartItems.length === 0 ? (
           <p>Your cart is empty</p>
         ) : (
-          <ul>
+          <>
             {cartItems.map((item) => (
-              <li key={item.id}>
-                {item.name} - ${item.price} x {item.quantity}
-              </li>
+                <div key={item.id} className="cart-item">
+                    <div className="cart-item-image">
+                      <img src={item.image} alt={item.title} />
+                    </div>
+                    <div className="cart-item-details">
+                  <span className="cart-item-title">{item.title}</span>
+                  <span className="cart-item-price">${item.price} x {item.quantity}</span>
+                  <button className="remove-item-btn" onClick={() => removeFromCart(item.id)}>Remove</button>
+                  </div>
+                </div>
             ))}
-          </ul>
+          </>
         )}
       </div>
     </div>
