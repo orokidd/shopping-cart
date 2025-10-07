@@ -3,6 +3,7 @@ import { CartContext } from "../../contexts/CartContext";
 import CartHeader from "./CartHeader";
 import CartItem from "./CartItem";
 import CartTotal from "./CartTotal";
+import CartActions from "./CartActions";
 
 export default function ShoppingCart() {
   const { cartItems, isCartOpen } = useContext(CartContext);
