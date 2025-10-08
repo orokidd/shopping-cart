@@ -6,10 +6,11 @@ export default function RootLayout() {
   return (
     <>
       <Header />
-      <ShoppingCart />
+      
       <main>
         <Outlet />
       </main>
+      <ShoppingCart />
     </>
   );
 }
