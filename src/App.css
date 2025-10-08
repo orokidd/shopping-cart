@@ -260,6 +260,13 @@ button {
   padding: 0 20px;
 }
 
+.cart-items.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #777;
+}
+
 .cart-item {
   display: grid;
   grid-template-columns: 80px 1fr;

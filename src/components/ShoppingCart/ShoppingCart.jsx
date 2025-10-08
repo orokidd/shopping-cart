@@ -14,7 +14,9 @@ export default function ShoppingCart() {
         <CartHeader />
 
         {cartItems.length === 0 ? (
-          <p>Your cart is empty</p>
+          <div className="cart-items empty">
+            <p>Your cart is empty</p>
+          </div>
         ) : (
           <div className="cart-items">
             {cartItems.map((item) => (
