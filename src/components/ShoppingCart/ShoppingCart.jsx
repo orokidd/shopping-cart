@@ -16,15 +16,14 @@ export default function ShoppingCart() {
         {cartItems.length === 0 ? (
           <p>Your cart is empty</p>
         ) : (
-          <>
+          <div className="cart-items">
             {cartItems.map((item) => (
               <CartItem key={item.id} item={item} />
             ))}
-          </>
+          </div>
         )}
 
         <CartTotal items={cartItems} />
-        <CartActions />
       </div>
     </div>
   );

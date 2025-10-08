@@ -3,8 +3,8 @@ export default function CartTotal({ items }) {
 
   return (
     <div className="cart-total">
-      <span>Subtotal:</span>
-      <span>${total.toFixed(2)}</span>
+      <span>Subtotal: ${total.toFixed(2)}</span>
+      <button className="checkout-button" onClick={() => console.log("Proceed to Checkout")}>Checkout</button>
     </div>
   );
 }
