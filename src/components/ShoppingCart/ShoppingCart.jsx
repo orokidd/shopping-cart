@@ -6,11 +6,11 @@ import CartTotal from "./CartTotal";
 import CartActions from "./CartActions";
 
 export default function ShoppingCart() {
-  const { cartItems, isCartOpen } = useContext(CartContext);
+  const { cartItems, isCartOpen, toggleCart } = useContext(CartContext);
 
   return (
-    <div className={`shopping-cart-overlay ${isCartOpen ? "open" : ""}`}>
-      <div className={`shopping-cart`}>
+    <div className={`shopping-cart-overlay ${isCartOpen ? "open" : ""}`} onClick={toggleCart}>
+      <div className={`shopping-cart`} onClick={(e) => e.stopPropagation()}>
         <CartHeader />
 
         {cartItems.length === 0 ? (
