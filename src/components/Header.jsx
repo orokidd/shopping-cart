@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
+import { Handbag } from "lucide-react";
 
 export function Header() {
   const { cartItems, toggleCart } = useContext(CartContext);
@@ -14,7 +15,8 @@ export function Header() {
         TERATAI
       </Link>
       <button className="cart-link" onClick={toggleCart}>
-        Cart ({cartItems.reduce((total, item) => total + item.quantity, 0)})
+        <Handbag strokeWidth={1.5} size={18} />
+        {cartItems.length > 0 ? <span className="cart-item-count">{cartItems.reduce((total, item) => total + item.quantity, 0)}</span> : null}
       </button>
     </header>
   );
