@@ -3,7 +3,7 @@ import { useState } from "react";
 
 export default function Shop() {
   const { data } = useLoaderData();
-  const [category, setCategory] = useState("men");
+  const [category, setCategory] = useState("all");
 
   const categoryMen = data.filter((product) => product.category === "men's clothing");
   const categoryWomen = data.filter((product) => product.category === "women's clothing");

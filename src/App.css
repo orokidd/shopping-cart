@@ -180,7 +180,14 @@ button {
 
 .shop-category button {
   font-size: 16px;
+  font-weight: 500;
   padding: 0;
+  color: #757575;
+}
+
+.shop-category button.active {
+  color: #252525;
+  transition: all .2s ease-in;
 }
 
 .product-section {
