@@ -203,6 +203,13 @@ button {
   margin-bottom: 20px;
 }
 
+.quantity-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+}
+
 .add-to-cart-btn {
   display: flex;
   justify-content: space-between;
