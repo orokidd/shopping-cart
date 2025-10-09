@@ -2,11 +2,12 @@ import { useLoaderData } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
 
-export function AddCartButton({product}) {
+export function AddCartButton({product, quantity, setCurrentQuantity}) {
   const { addToCart } = useContext(CartContext);
 
   const handleAddToCart = () => {
-    addToCart(product);
+    addToCart(product, quantity);
+    setCurrentQuantity(1);
   };
 
   return (

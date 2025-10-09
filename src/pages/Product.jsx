@@ -1,9 +1,12 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { AddCartButton } from "../components/AddCartButton";
+import { useState } from "react";
+import Quantity from "../components/Product/Quantity";
 
 export default function Product() {
   const { data } = useLoaderData();
   const { id } = useParams();
+  const [currentQuantity, setCurrentQuantity] = useState(1);
 
   return (
     <>
@@ -17,7 +20,8 @@ export default function Product() {
             <div className="product-detail">
               <h1>{product.title}</h1>
               <p>{product.description}</p>
-              <AddCartButton product={product} />
+              <Quantity quantity={currentQuantity} setQuantity={setCurrentQuantity} />
+              <AddCartButton product={product} quantity={currentQuantity} setCurrentQuantity={setCurrentQuantity} />
             </div>
           </div>
         ))}
