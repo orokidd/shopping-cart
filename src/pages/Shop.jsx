@@ -1,19 +1,25 @@
 import { useLoaderData, Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function Shop() {
   const { data } = useLoaderData();
+  const [category, setCategory] = useState("men");
+
+  const categoryMen = data.filter((product) => product.category === "men's clothing");
+  const categoryWomen = data.filter((product) => product.category === "women's clothing");
+  const categoryJewelery = data.filter((product) => product.category === "jewelery");
 
   return (
     <section className="shop-page">
-      <div className="category">
-        <p>All products</p>
-        <p>Men</p>
-        <p>Women</p>
-        <p>Jewelry</p>
+      <div className="shop-category">
+        <button className={category === "all" ? "active" : ""} onClick={() => setCategory("all")}>All products</button>
+        <button className={category === "men" ? "active" : ""} onClick={() => setCategory("men")}>Men</button>
+        <button className={category === "women" ? "active" : ""} onClick={() => setCategory("women")}>Women</button>
+        <button className={category === "jewelery" ? "active" : ""} onClick={() => setCategory("jewelery")}>Jewelry</button>
       </div>
 
       <div className="product-list shop">
-        {data.map((product) => (
+        {(category === "all" ? data : category === "men" ? categoryMen : category === "women" ? categoryWomen : categoryJewelery).map((product) => (
           <div className="product-item" key={product.id}>
             <Link to={`/product/${product.id}`}>
               <img src={product.image} alt={product.name} />

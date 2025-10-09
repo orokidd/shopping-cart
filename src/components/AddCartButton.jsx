@@ -1,4 +1,3 @@
-import { useLoaderData } from "react-router-dom";
 import { useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
 

@@ -169,13 +169,18 @@ button {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.shop-page .category {
+.shop-page .shop-category {
   display: flex;
   gap: 40px;
 
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 60px;
+}
+
+.shop-category button {
+  font-size: 16px;
+  padding: 0;
 }
 
 .product-section {
