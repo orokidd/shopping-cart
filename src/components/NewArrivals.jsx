@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function NewArrivals() {
   const { data } = useLoaderData();
@@ -12,7 +13,9 @@ export default function NewArrivals() {
       <div className="product-list">
         {newProducts.map((product) => (
           <div key={product.id} className="product-item">
-            <img src={product.image} alt={product.title} className="product-image" />
+            <Link to={`/product/${product.id}`} className="product-link">
+              <img src={product.image} alt={product.title} className="product-image" />
+            </Link>
             <h3 className="product-title">{product.title}</h3>
             <p className="product-price">${product.price}</p>
           </div>
