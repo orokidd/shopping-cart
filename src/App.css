@@ -185,6 +185,59 @@ button {
   object-fit: cover;
 }
 
+.sustainability-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+.sustainability-texts {
+  padding-bottom: 40px;
+}
+
+.sustainability-container h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.sustainability-container p {
+  text-align: center;
+  color: #555;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.sustainability-button {
+  display: block;
+  margin: 0 auto;
+  /* background-color: black; */
+  color: black;
+  border: 1px solid black;
+  padding: 10px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sustainability-button:hover {
+  background-color: black;
+  color: white;
+}
+
+.sustainability-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
 .product-list {
   display: grid;
   max-width: 1200px;
