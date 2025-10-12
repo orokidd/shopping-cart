@@ -1,4 +1,3 @@
-import showcase from "../../assets/showcase01.jpg";
 import showcase5 from "../../assets/showcase05.jpg";
 import showcase3 from "../../assets/showcase03.jpg";
 import showcase4 from "../../assets/showcase04.jpg";
