@@ -277,6 +277,58 @@ button {
   max-width: 42px;
 }
 
+.newsletter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px;
+  padding: 80px 0; 
+}
+
+.newsletter-heading {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.newsletter-description {
+  color: #555;
+  text-align: center;
+  max-width: 600px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 2px;
+}
+
+.newsletter-input {
+  flex: 1;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.newsletter-button {
+  background-color: black;
+  color: white;
+  border: 1px solid black;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
+  background-color: white;
+  color: black;
+}
+
 .product-list {
   display: grid;
   max-width: 1200px;
