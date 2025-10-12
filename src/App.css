@@ -619,8 +619,14 @@ button {
     font-size: 14px;
   }
 
+  /* Store page */
   .shop-category button {
     font-size: 14px;
+  }
+
+  /* Product page */
+  .product-section {
+    padding: 40px 20px;
   }
 }
 
