@@ -442,8 +442,6 @@ button {
   display: grid;
   grid-template-columns: 80px 1fr;
   grid-template-rows: 120px;
-
-  /* gap: 20px; */
   border-bottom: 1px solid rgb(220, 220, 220);
   padding: 20px 0;
 }
@@ -451,12 +449,6 @@ button {
 .cart-item:last-child {
   border-bottom: none;
 }
-
-/* .cart-item-image {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
 
 .cart-item-image img {
   width: 80px;
@@ -506,4 +498,14 @@ button {
 .checkout-button:hover {
   background-color: white;
   color: black;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid rgb(220, 220, 220);
+  margin-top: 40px;
+  color: #777;
 }
