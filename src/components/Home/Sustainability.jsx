@@ -1,4 +1,4 @@
-import Sustainability1 from "../../assets/sustainability02.jpg";
+import Sustainability1 from "../../assets/sustainability02.webp";
 
 export default function Sustainability() {
   return (

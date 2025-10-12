@@ -1,6 +1,6 @@
-import showcase5 from "../../assets/showcase05.jpg";
-import showcase3 from "../../assets/showcase03.jpg";
-import showcase4 from "../../assets/showcase04.jpg";
+import showcase5 from "../../assets/showcase05.webp";
+import showcase3 from "../../assets/showcase03.webp";
+import showcase4 from "../../assets/showcase04.webp";
 
 export default function Showcase() {
   return (
