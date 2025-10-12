@@ -7,7 +7,7 @@ export default function Footer() {
         <Link to="/" className="home-link">
           TERATAI
         </Link>
-        <p>© 2024 Shopping Cart. All rights reserved.</p>
+        <p className="footer-rights">© 2024 All rights reserved</p>
       </div>
     </div>
   );
