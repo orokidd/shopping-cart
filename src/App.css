@@ -150,7 +150,8 @@ button {
   display: flex;
 }
 
-.showcase-texts, .showcase-image {
+.showcase-texts,
+.showcase-image {
   flex: 1;
 }
 
@@ -238,6 +239,44 @@ button {
   object-fit: cover;
 }
 
+.service-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.service-header h1 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.service-items {
+  display: flex;
+  justify-content: center;
+  gap: 160px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  max-width: 200px;
+}
+
+.item h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.service-icon {
+  aspect-ratio: 1 / 1;
+  max-width: 42px;
+}
+
 .product-list {
   display: grid;
   max-width: 1200px;
@@ -289,7 +328,7 @@ button {
 
 .shop-category button.active {
   color: #252525;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .product-section {
