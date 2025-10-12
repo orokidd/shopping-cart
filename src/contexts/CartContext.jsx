@@ -6,7 +6,7 @@ export function CartProvider({ children }) {
   const [cartItems, setCartItems] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  const addToCart = (newItem, quantity) => {
+  const addToCart = (newItem, quantity = 1) => {
     setCartItems((prevItems) => {
       const itemExists = prevItems.find((item) => item.id === newItem.id);
 

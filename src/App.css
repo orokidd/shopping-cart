@@ -317,6 +317,10 @@ button {
   font-size: 16px;
 }
 
+.newsletter-input:focus {
+  outline: none;
+}
+
 .newsletter-button {
   background-color: black;
   color: white;
