@@ -1,5 +1,5 @@
 <h1 align="center">
-  Nexus 
+  Shopping Cart
   <h4 align="center">A simple shopping cart application built with React</h4>
 </h1>
 
